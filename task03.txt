@@ -1,0 +1,47 @@
+DAY 02 TASK 
+
+Question : Write a Blog On Difference Between Document and Window Objects 
+
+Answer   : 
+
+Document       : The document object represents Our web page. If We want to access any element in an HTML page,
+                 We always start with accessing the document object.
+
+Window Object  : The window object represents an open window in a browser.
+                 If a document contain frames (<iframe> tags), the browser creates one window object for the HTML document,
+                 and one additional window object for each frame.
+
+Difference Between Document and Window Objects : 
+                 When an HTML document is loaded into a web browser, it becomes a document object.
+                 The document object is the root node of the HTML document.
+                 The document object is a property of the window object.
+                 The document object is accessed with: window.document or just document
+
+Document : It represents the document loaded inside the window or browser.
+Window   : It represents the browser window in which you are seeing the content.
+
+Document : The properties related to it are stored in the document object.
+Window   : The properties related to it are stored in the window object.
+
+Document : It is loaded after the loading window because the window contains a document.
+Window   : It is loaded before the document because window container document.
+
+Document : It is the root element of the document object model.
+Window   : The window is the global element for all objects, functions, etc.
+
+Document : It is an object of window.
+Window   : It is an object of the browser.
+
+Document : We can not access windows objects properties inside the document.
+Window   : We can access document object properties inside the window
+
+Document : logically:
+           document:{ properties}
+Window   : logically:
+           window:{
+             document:{properties}
+           }
+
+Document : Example: document.title will return the title of the document
+Window   : Example: window.document.title will return the title of the document.
+
